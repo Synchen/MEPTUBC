@@ -13,11 +13,8 @@ set path_to_filefolder= Replace
 
 set path_to_pscp= Replace
 
-
-
-:: Here starts the path to hell.
-
-
+:: Here starts the path to hell
+:: DO NOT CHANGE ANYTHING BENEATH THIS LINE
 
 if exist %path_to_pscp%pscp.exe (
 echo Enter Account
