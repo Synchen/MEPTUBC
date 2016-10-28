@@ -1,7 +1,7 @@
 @echo off
 echo Batch script // Upload to Unixpool via Putty SCP
 setlocal enabledelayedexpansion
-:: Made by Patrick Abraham
+:: Made by Patrick "Synchen" A.
 
 :: Replace with path to the filefolder
 :: Example path_to_filefolder=C:\Users\Nyancat\CoMa_I_Pa\
@@ -13,11 +13,8 @@ set path_to_filefolder= Replace
 
 set path_to_pscp= Replace
 
-
-
-:: Here starts the path to hell.
-
-
+:: Here starts the path to hell
+:: DO NOT CHANGE ANYTHING BENEATH THIS LINE
 
 if exist %path_to_pscp%pscp.exe (
 echo Enter Account
