@@ -1,5 +1,5 @@
 MEPTUBC (More Easy Pscp script for TU Berlin CoMa)
-MEPTUBC is a script that will make all the inputs for you !AFTER! you replaced the neccessary filepaths.
+MEPTUBC is a script that will make all the inputs for you **after** you replaced the neccessary filepaths.
 
 Since windows user don't have a built-in-function for SSH and SCP,
 I wanted to help all those of you, whom don't want to fiddle around with the windows commando line to upload a file.
