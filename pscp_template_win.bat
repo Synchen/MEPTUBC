@@ -1,7 +1,7 @@
 @echo off
 echo Batch script // Upload to Unixpool via Putty SCP
 setlocal enabledelayedexpansion
-:: Made by Patrick Abraham
+:: Made by Patrick "Synchen" A.
 
 :: Replace with path to the filefolder
 :: Example path_to_filefolder=C:\Users\Nyancat\CoMa_I_Pa\
