@@ -7,6 +7,7 @@ I wanted to help all those of you, whom don't want to fiddle around with the win
 Step 1
 
 Download PSCP
+
 Either google PSCP / Putty SCP or visit http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
 This programm is neccessary for everything else.
 Save it to a folder and keep the path to it in mind.
