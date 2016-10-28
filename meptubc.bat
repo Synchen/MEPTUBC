@@ -1,5 +1,5 @@
 @echo off
-echo Batch script // Upload to Unixpool via Putty SCP
+echo More Easy Pscp script for TU Berlin CoMa
 setlocal enabledelayedexpansion
 :: Made by Patrick "Synchen" A.
 
