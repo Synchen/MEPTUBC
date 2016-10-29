@@ -17,7 +17,7 @@ You can actually use PSCP by yourself via console and I would recommend you to t
 
 Step 2
 
-Replace "Replace" with the describe folder path. [Warning the path should always end with an \\ ]
+Replace "Replace" with the describe folder path.
 The first Replace (in line 9) should be replaced with the (full)path to the folder containing the PA's
 and should look something like "C:\users\...\Coma_PA\".
 
@@ -30,4 +30,5 @@ Run the .bat
 
 
 For questions or suggestions sent an e-mail to
+
 aabraham.patrick at googlemail.com

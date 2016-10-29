@@ -16,7 +16,7 @@ set path_to_pscp= Replace
 :: Here starts the path to hell
 :: DO NOT CHANGE ANYTHING BENEATH THIS LINE
 
-if exist %path_to_pscp%pscp.exe (
+if exist %path_to_pscp%\pscp.exe (
 echo Enter Account
 echo   Example co1-000
 set /P acc=: 
@@ -26,9 +26,9 @@ echo   Example PA01 [for PA01.py]
 set /P obj=: 
 echo.
 
-if exist %path_to_filefolder%!obj!.py (
+if exist %path_to_filefolder%\!obj!.py (
 
-%path_to_pscp%pscp.exe %path_to_filefolder%!obj!.py !acc!@unixpool.math.tu-berlin.de:./!obj!.py
+%path_to_pscp%\pscp.exe %path_to_filefolder%\!obj!.py !acc!@unixpool.math.tu-berlin.de:./!obj!.py
 
 ) else (echo. & echo !obj!.py does not exist in the folder %path_to_filefolder% ! & echo.)
 ) else (echo. & echo Pscp doesn't exist at %path_to_pscp%! & echo.)
