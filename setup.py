@@ -13,7 +13,7 @@ if not ptf.endswith("\\"):
 	ptf = ptf + "\\"
 
 	
-print("Please enter path to filefolder containing pscp.exe","  Example: C:\\Users\\Nyancat\\Putty\\")
+print("Please enter path to filefolder containing pscp.exe","  Example: C:\\Users\\Nyancat\\Putty\\",sep="\n")
 ptp = input("_ ")
 while not path.isdir(ptp):
 	print("%s is not a correct folder!"% ptp)
