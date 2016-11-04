@@ -25,5 +25,5 @@ if not ptp.endswith("\\"):
 print(ptf,ptp, sep = "\n", end = "", file = conf)
 
 #Made by Patrick A.
-#If you have qquestions, suggestions or found typos send me an email:
+#If you have questions, suggestions or found typos send me an email:
 #   meptubc@gmail.com
