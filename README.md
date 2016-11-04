@@ -10,10 +10,10 @@ This will allow you a more easy approach to upload files to the tu berlin unixpo
 Please note you need a working account at the unixpool to do so.
 
 
-If you want to also access the account through ssh (console) and not only upload files,
+If you want to also access the account via ssh (console) and not only upload files,
 
 I would recommend you to download Putty!
 
-You don't need anythin besides Putty to get access.
+You don't need anything besides Putty to get access via ssh.
 
 It is easy to use!
