@@ -17,7 +17,7 @@ if path.isfile("%s\\conf.ini" % path.dirname(path.abspath(__file__))):
         path_to_filefolder	= conf_read[0]
         path_to_pscp		= conf_read[1]
     
-        if "pscp.exe" in listdir(path_to_pscp):
+        if "pscp.exe" in [i.lower() for i in listdir(path_to_pscp)]:
 
             print(" Windows scp-script for unixpool@tu-berlin\n")
             print(" Enter Filename\n  Example PA01.py\n")
