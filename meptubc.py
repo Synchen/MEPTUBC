@@ -22,20 +22,22 @@ if path.isfile("%s\\conf.ini" % path.dirname(path.abspath(__file__))):
             print(" Windows scp-script for unixpool@tu-berlin\n")
             print(" Enter Filename\n  Example PA01.py\n")
             obj = input(" >: ")
+            while not obj in listdir(path_to_filefolder):
+                print("\n ERROR") 
+                print(" %s was not found at %s!" % (obj,path_to_filefolder))
+                print(" Re-enter the Filename.\n If you want to Exit just press Enter without any input.\n")
+                obj = input(" >: ")
+                if not obj:
+                    exit()
+                
             print("\n Enter Account\n  Example co1-042\n")
             acc = input(" >: ")
             
             print("\n        After the file was uploaded,\n        the file can be found in your accounts home-folder.\n")
 
-            if obj in listdir(path_to_filefolder):
-                system("%spscp.exe %s%s %s@unixpool.math.tu-berlin.de:." % (path_to_pscp,path_to_filefolder,obj,acc))
+            system("%spscp.exe %s%s %s@unixpool.math.tu-berlin.de:." % (path_to_pscp,path_to_filefolder,obj,acc))
+            pause()
             
-            else:
-                print(" ERROR") 
-                print(" %s was not found at %s!" % (obj,path_to_filefolder))
-                print(" If you want an other filefolder rerun setup.py")
-                pause()
-                
         else:
             print(" ERROR")
             print(" pscp.exe was not found in %s !" % path_to_pscp)
