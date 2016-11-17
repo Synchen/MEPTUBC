@@ -1,4 +1,4 @@
-from os import path
+from os import listdir, path
 
 conf = open(path.dirname(path.abspath(__file__))+"\\conf.ini", "w")
 
@@ -16,9 +16,15 @@ if not ptf.endswith("\\"):
 print(" Please enter path to filefolder containing pscp.exe","   Example: C:\\Users\\Nyancat\\Putty\\",sep="\n")
 ptp = input(" >: ")
 while not path.isdir(ptp):
-    print(" %s is not a correct folder!"% ptp)
-    print(" Please input correct folder!")
+    print(" %s is not a folder!"% ptp)
+    print(" Please input the path to the folder!")
     ptp = input(" >: ")
+
+while not 'pscp.exe' in [i.lower() for i in listdir(ptp)]:
+    print(" %s does not contain pscp.exe"% ptp)
+    print(" Please input the path to the folder containing pscp.exe")
+    ptp = input(" >: ")
+    
 if not ptp.endswith("\\"):
     ptp = ptp + "\\"
     
